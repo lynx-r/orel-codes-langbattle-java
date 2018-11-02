@@ -49,7 +49,6 @@ public class Json2jsonApplication {
 
   @PostMapping("/json2json")
   public Mono<Json> json2json(@RequestBody() Json json) throws NoSuchAlgorithmException {
-    json.setId("Input ID");
     String firstNameMd5 = getMd5(json.getFirstName());
     json.setFirstName(json.getFirstName() + firstNameMd5);
     String lastNameMd5 = getMd5(json.getLastName());
