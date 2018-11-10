@@ -1,3 +1,12 @@
+## Как запускать
+
+1. Установить Java SE 8+
+2. Запустить `./gradlew build bootRun`
+
+Если через gradlew не получится, тогда установить [gradle](https://gradle.org/install/)
+
+## Контест для Orel Codes
+
 Задача:
 
 Написать программу котороая принимает по HTTP Post запрос в JSON и
@@ -9,7 +18,7 @@
 {
  id: 'Rand ID',
  first_name: 'Rand Name',
- last_name: 'Rand Last Name',
+ last_name: 'Rand Last Name'
 }
 ```
 
@@ -30,3 +39,7 @@ Output:
 Content-Type: application/json
 
 Формат сurrent_time: %F %T %z (2018-11-01 17:35:15 +0300)
+
+## Стек
+
+Java 8+, Spring Boot 2 (WebFlux)
