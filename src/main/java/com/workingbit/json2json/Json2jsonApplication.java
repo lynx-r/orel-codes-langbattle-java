@@ -6,10 +6,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-import reactor.core.publisher.Mono;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -48,7 +48,7 @@ class Json {
 public class Json2jsonApplication {
 
   @PostMapping("/json2json")
-  public Mono<Json> json2json(@RequestBody() Json json) throws NoSuchAlgorithmException {
+  public ResponseEntity<Json> json2json(@RequestBody() Json json) throws NoSuchAlgorithmException {
     String firstNameMd5 = getMd5(json.getFirstName());
     json.setFirstName(json.getFirstName() + firstNameMd5);
     String lastNameMd5 = getMd5(json.getLastName());
@@ -57,7 +57,7 @@ public class Json2jsonApplication {
     String now = ZonedDateTime.now().format(formatter);
     json.add("current_time", now);
     json.add("say", "Java is best");
-    return Mono.just(json);
+    return ResponseEntity.ok(json);
   }
 
   private String getMd5(String str) throws NoSuchAlgorithmException {
