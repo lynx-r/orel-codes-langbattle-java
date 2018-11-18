@@ -1,7 +1,12 @@
 ## Как запускать
 
 1. Установить Java SE 10+
-2. Запустить `./build/libs/langbattle-0.0.1-SNAPSHOT.jar`
+2. Запустить
+ 
+```
+gradle clean build
+./build/libs/langbattle-1.0.jar
+```
 
 Если через gradlew не получится, тогда установить [gradle](https://gradle.org/install/)
 

@@ -16,7 +16,7 @@ apply plugin: 'org.springframework.boot'
 apply plugin: 'io.spring.dependency-management'
 
 group = 'com.workingbit'
-version = '0.0.1-SNAPSHOT'
+version = '1.0'
 sourceCompatibility = 11
 
 repositories {
@@ -29,7 +29,6 @@ bootJar {
 
 dependencies {
     implementation('org.springframework.boot:spring-boot-starter-web')
-    implementation('org.projectlombok:lombok:1.16.22')
     implementation('commons-codec:commons-codec:1.11')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     testImplementation('io.projectreactor:reactor-test')
