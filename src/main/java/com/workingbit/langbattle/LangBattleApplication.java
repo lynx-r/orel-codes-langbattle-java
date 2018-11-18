@@ -27,14 +27,16 @@ public class LangBattleApplication {
   @PostMapping("/")
   public ResponseEntity<Map<String, Object>> postJson(@RequestBody() Map<String, Object> req) {
     var firstName = (String) req.get("first_name");
-    var firstNameWithMd5 = format("%s %s", firstName, DigestUtils.md5Hex(firstName));
     var lastName = (String) req.get("last_name");
-    var lastNameWithMd5 = format("%s %s", lastName, DigestUtils.md5Hex(lastName));
     var currentDate = FORMATTER.format(ZonedDateTime.now());
-    req.put("first_name", firstNameWithMd5);
-    req.put("last_name", lastNameWithMd5);
-    req.put("current_time", currentDate);
-    req.put("say", "Java is the best");
-    return ResponseEntity.ok(req);
+    return ResponseEntity.ok(
+        Map.of(
+            "id", req.get("id"),
+            "first_name", format("%s %s", firstName, DigestUtils.md5Hex(firstName)),
+            "last_name", format("%s %s", lastName, DigestUtils.md5Hex(lastName)),
+            "current_time", currentDate,
+            "say", "Java is the best"
+        )
+    );
   }
 }
