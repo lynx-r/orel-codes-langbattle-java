@@ -1,11 +1,11 @@
 ## Как запускать
 
-1. Установить Java SE 8+
-2. Запустить `./gradlew clean build bootRun` или `gradle clean build`, а затем `java -jar build/libs/json2json-0.0.1-SNAPSHOT.jar`
+1. Установить Java SE 10+
+2. Запустить `./gradlew clean build bootRun` или `gradle clean build`, а затем `java -jar build/libs/langbattle-0.0.1-SNAPSHOT.jar`
 
 Если через gradlew не получится, тогда установить [gradle](https://gradle.org/install/)
 
-3. Запросы надо выполнять по адресу `http://localhost:8080/json2json`
+3. Запросы надо выполнять по адресу `http://localhost:8080/`
 
 Пример запроса:
 
@@ -66,4 +66,4 @@ Content-Type: application/json
 
 ## Стек
 
-Java 8+, Spring Boot 2 (WebFlux)
+Java 10+, Spring Boot 2

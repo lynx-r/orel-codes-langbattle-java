@@ -47,7 +47,7 @@ public class LangBattleApplication {
   }
 
   @PostMapping("/")
-  public ResponseEntity<JsonResponse> json2json(@RequestBody() JsonRequest req) throws NoSuchAlgorithmException {
+  public ResponseEntity<JsonResponse> get(@RequestBody() JsonRequest req) throws NoSuchAlgorithmException {
     String firstNameWithMd5 = req.getFirstName() + " " + getMd5(req.getFirstName());
     String lastNameWithMd5 = req.getLastName() + " " + getMd5(req.getLastName());
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss Z");
