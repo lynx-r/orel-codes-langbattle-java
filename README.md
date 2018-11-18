@@ -22,12 +22,11 @@
 ```
 {
     "id": "Rand ID",
-    "first_name": "Rand Name\ufffd)\ufffd}&\ufffd\ufffd3\ufffdd/\ufffd\ufffdCV\u0015",
-    "last_name": "Rand Last Namec\u0003\ufffd\u0018JAA\ufffd \ufffd0\ufffdg\ufffd`\ufffd",
-    "say": "Java is best",
-    "current_time": "2018-11-10 10:21:01 +0300"
+    "say": "Java is the best",
+    "first_name": "Rand Name jin5fSb7nDOsZC+tz0NWFQ==",
+    "last_name": "Rand Last Name YwPOGEpBQY8g8zCvZ9dg+A==",
+    "current_time": "2018-11-18 08:49:47 +0300"
 }
-```
 
 ## Контест для Orel Codes
 
