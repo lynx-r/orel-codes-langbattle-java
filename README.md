@@ -1,6 +1,6 @@
 ## Как запускать
 
-1. Установить Java SE 10+
+1. Установить Java SE 11+
 2. Запустить
  
 ```
@@ -34,7 +34,7 @@
 }
 ```
 
-Так же есть ветка с бинарниками :) #bin
+Так же есть ветка с бинарниками :) [bin](https://github.com/lynx-r/orel-codes-langbattle/tree/bin)
 
 ## Контест для Orel Codes
 
@@ -73,4 +73,4 @@ Content-Type: application/json
 
 ## Стек
 
-Java 10+, Spring Boot 2
+Java 11+, Spring Boot 2
