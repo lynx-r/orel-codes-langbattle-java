@@ -4,13 +4,13 @@
 2. Запустить
  
 ```
-gradle clean build
+./gradlew clean build
 ./build/libs/langbattle-1.0.jar
 ```
 
 Если через gradlew не получится, тогда установить [gradle](https://gradle.org/install/)
 
-3. Запросы надо выполнять по адресу `http://localhost:8080/`
+3. Запросы принимаются по адресу `http://localhost:8080/`
 
 Пример запроса:
 
@@ -33,6 +33,8 @@ gradle clean build
     "current_time": "2018-11-18 14:05:24 +0300"
 }
 ```
+
+Так же есть ветка с бинарниками :) #bin
 
 ## Контест для Orel Codes
 
