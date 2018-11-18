@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.security.NoSuchAlgorithmException;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Map;
@@ -26,7 +25,7 @@ public class LangBattleApplication {
   }
 
   @PostMapping("/")
-  public ResponseEntity<Map<String, Object>> get(@RequestBody() Map<String, Object> req) throws NoSuchAlgorithmException {
+  public ResponseEntity<Map<String, Object>> postJson(@RequestBody() Map<String, Object> req) {
     var firstName = (String) req.get("first_name");
     var firstNameWithMd5 = format("%s %s", firstName, DigestUtils.md5Hex(firstName));
     var lastName = (String) req.get("last_name");
