@@ -20,7 +20,7 @@ import static java.lang.String.format;
 @SpringBootApplication
 public class LangBattleApplication {
 
-  private static DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss Z");
+  private static final DateTimeFormatter FORMATTER = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss Z");
 
   public static void main(String[] args) {
     SpringApplication.run(LangBattleApplication.class, args);
