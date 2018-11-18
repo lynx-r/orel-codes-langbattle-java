@@ -1,4 +1,4 @@
-package com.workingbit.json2json;
+package com.workingbit.langbattle;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
