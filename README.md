@@ -1,7 +1,7 @@
 ## Как запускать
 
 1. Установить Java SE 10+
-2. Запустить `./gradlew clean build bootRun` или `gradle clean build`, а затем `java -jar build/libs/langbattle-0.0.1-SNAPSHOT.jar`
+2. Запустить `./build/libs/langbattle-0.0.1-SNAPSHOT.jar`
 
 Если через gradlew не получится, тогда установить [gradle](https://gradle.org/install/)
 
@@ -22,11 +22,12 @@
 ```
 {
     "id": "Rand ID",
+    "first_name": "Rand Name 8e29f97d26fb9c33ac642fadcf435615",
+    "last_name": "Rand Last Name 6303ce184a41418f20f330af67d760f8",
     "say": "Java is the best",
-    "first_name": "Rand Name jin5fSb7nDOsZC+tz0NWFQ==",
-    "last_name": "Rand Last Name YwPOGEpBQY8g8zCvZ9dg+A==",
-    "current_time": "2018-11-18 08:49:47 +0300"
+    "current_time": "2018-11-18 14:05:24 +0300"
 }
+```
 
 ## Контест для Orel Codes
 
